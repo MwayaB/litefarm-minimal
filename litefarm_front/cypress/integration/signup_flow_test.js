@@ -10,7 +10,7 @@ describe('My signup flow test', function () {
        // A password of more than 6 characters,
        // A name string of any length
        //Ensure after clicking signup, you are not shown the name input anymore.
-       
+              
         cy.contains('Signup').click()
 
         cy.contains('Please type in a valid email')
