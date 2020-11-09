@@ -4,8 +4,7 @@ describe('My signup flow test', function () {
         cy.visit('http://localhost:3001/')
         
         cy.contains('Signup here!').click()
-
-        
+        cy.get('input[placeholder="Your name"]').should('be.visible')
        // Ensure the following are required to sign up: A valid email, 
        // A password of more than 6 characters,
        // A name string of any length
